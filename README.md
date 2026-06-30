@@ -1,3 +1,176 @@
+# 📦 Logistics Analysis & Fleet Optimization – LISASA
+
+> Proyecto académico – implementación propia basada en consignas del ITBA
+
+---
+
+## 📌 Descripción
+
+Este proyecto implementa un sistema orientado a objetos para la gestión de operaciones logísticas urbanas, desarrollado para la empresa ficticia *LISASA (Logística Inteligente S.A.)*.
+
+El sistema modela la asignación de entregas a distintos tipos de transporte, validando restricciones operativas como capacidad de carga y ventanas horarias. Además, incorpora generación de datos simulados y visualización de resultados para analizar el comportamiento del sistema.
+
+---
+
+## 🎯 Objetivos del Proyecto
+
+- Modelar un sistema logístico utilizando Programación Orientada a Objetos  
+- Gestionar entregas con restricciones reales (peso, volumen, tiempo)  
+- Detectar y registrar incidencias operativas  
+- Analizar costos de transporte y simular ajustes económicos  
+- Generar datasets y visualizar información para análisis  
+
+---
+
+## ⚙️ Funcionalidades Principales
+
+### 🚚 Gestión de Transportes
+- Modelado de distintos tipos de transporte (motocicletas, furgonetas, camiones)  
+- Definición de capacidades máximas (peso y volumen)  
+- Cálculo de costos operativos según tipo de vehículo  
+
+---
+
+### 📦 Gestión de Entregas
+- Registro de solicitudes con múltiples artículos  
+- Cálculo automático de peso y volumen total  
+- Validación de ventanas horarias de entrega  
+
+---
+
+### 🗺️ Planificación de Viajes
+- Asignación de entregas a transportes  
+- Verificación de restricciones:
+  - Capacidad de carga  
+  - Cumplimiento de franjas horarias  
+- Agrupación de múltiples entregas en un mismo recorrido  
+
+---
+
+### ⚠️ Gestión de Incidencias
+- Registro de problemas durante entregas (DAÑO, RETRASO, AUSENTE)  
+- Asociación de incidencias a entregas y transportes  
+- Generación de reportes de fallas críticas  
+
+---
+
+## 📊 Análisis y Visualización de Datos
+
+### 📁 Generación de Datos
+- Creación automática de datasets simulando operaciones logísticas  
+- Generación de escenarios con distintas condiciones operativas  
+- Uso de estructuras nativas de Python (sin pandas)  
+
+---
+
+### 📈 Visualización
+- Generación de gráficos para análisis de:
+  - Incidencias por tipo  
+  - Costos operativos  
+  - Distribución de entregas  
+- Representación visual para facilitar interpretación de resultados  
+
+---
+
+## 📊 Reportes
+
+### Reporte de Incidencias Críticas
+- Filtrado de entregas con fallas graves  
+- Exportación de resultados a archivo `.csv`  
+
+### Ajuste de Costos por Inflación
+- Incremento del costo operativo base en un 15%  
+- Simulación de impacto económico sobre la flota  
+
+---
+
+## 🧱 Estructura del Proyecto
+
+├── src/<br>
+│   ├── almacen.py<br>
+│   ├── main.py<br>
+│   └── analizador.py<br>
+├── tests/<br>
+└── README.md<br>
+
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- Python  
+- Programación Orientada a Objetos (OOP)  
+- pytest  
+- Manejo de archivos CSV  
+- Generación de datos sintéticos  
+- Visualización de datos  
+
+---
+
+## 🧪 Testing
+
+El sistema incluye tests automatizados para validar:
+
+- Restricciones de carga en transportes  
+- Cumplimiento de ventanas horarias  
+- Detección de incidencias críticas  
+- Aplicación correcta de reglas de negocio  
+
+Ejecutar tests:<br>
+pytest
+
+---
+
+## ▶️ Ejecución
+
+git clone https://github.com/tomasgarione/logistics-analysis-lisasa.git<br>
+cd logistics-analysis-lisasa<br>
+python src/main.py<br>
+
+---
+
+## 📊 Ejemplo de Output
+
+Archivos generados:
+
+- `incidencias_graves.csv`  
+- datasets simulados  
+- gráficos de análisis  
+
+Ejemplo de contenido:
+
+- DAÑO EN PRODUCTO
+- CLIENTE AUSENTE
+- RETRASO EN ENTREGA
+
+
+---
+
+## 🧠 Decisiones de Diseño
+
+- Uso de OOP para modelar entidades del dominio logístico  
+- Separación entre lógica de negocio y estructuras de datos  
+- Validaciones explícitas para asegurar consistencia  
+- Diseño preparado para futuras extensiones  
+
+---
+
+## 📚 Contexto Académico
+
+Proyecto desarrollado en el ITBA como parte de una materia orientada a modelado de sistemas y programación.
+
+---
+
+## 🚀 Posibles mejoras
+
+- Integración con bases de datos (SQL)  
+- Dashboards interactivos (Power BI / Streamlit)  
+- Optimización de rutas  
+- Modelos predictivos de incidencias  
+
+
+
+
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=23102675)
 # Trabajo Práctico: Optimización de Flota Logística Urbana
 
